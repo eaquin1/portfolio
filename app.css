@@ -102,13 +102,16 @@
 
 /*Main Image*/
   .main-image {
-    width: 80%;
+    text-align: center;
+    margin: 50px;
 
   }
 
   #main-title {
     position: relative;
     z-index: auto;
+    text-align: center;
+    margin: 50px;
   }
 
 /* Works */
@@ -119,6 +122,8 @@
       flex-wrap: wrap;
       justify-content: center;
       align-items: flex-end;
+      margin: 50px;
+
     }
 
     .work-links {
