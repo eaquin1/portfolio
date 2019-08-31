@@ -127,9 +127,32 @@
     }
 
     .work-links {
-      width: 40vw;
+      width: 50vh;
+      padding: 4px;
+      line-height: 1.42857143;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      -webkit-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      display: inline-block;
+      margin: 20px;
+      height: auto;
+      }
 
-    }
+
+
+
+      img.work-links:hover,
+      img.work-links:focus,
+      img.work-links.active {
+        border-color: #337ab7;
+      }
+
+      .work-title {
+        text-align: center;
+      }
 
 /* Footer */
 
