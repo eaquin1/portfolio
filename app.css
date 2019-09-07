@@ -21,10 +21,15 @@
           width: 50px;
         }
 
-        div.navbar > img {
-            max-width: 100%;
-            max-height: 100%;
+        #logo-name {
+          position: absolute;
+          left: 10 px;
+          color: rgba(255, 255, 255, 0.7);
+          float: left;
+          margin-left: 75px;
         }
+
+
 
         .main-nav {
             list-style-type: none;
