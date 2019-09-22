@@ -142,11 +142,11 @@ h1 {
 
 .email {
   text-decoration: none;
-  color: #000000;
+  color: #709FB0;
 }
 
 .email:hover, .email:focus {
-  color: #709FB0
+  color: #000000;
 }
 /* Works*/
 
