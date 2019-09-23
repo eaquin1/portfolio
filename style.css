@@ -39,10 +39,11 @@ body {
 
 
 .logo {
-  display: inline-block;
+
   font-family: 'Pacifico', cursive;
-  margin-top: 10px;
-  margin-left: 20px;
+  margin-top: 0;
+
+  margin-left: 100px;
   color: rgba(255, 255, 255, 0.7);
   font-size: 25px;
 }
@@ -73,7 +74,8 @@ body {
   display: block;
 }
 
-@media screen and (min-width: 768px) {    .navbar {
+@media screen and (min-width: 768px) {
+      .navbar {
         display: flex;
         justify-content: space-between;
         padding-bottom: 0;
@@ -90,6 +92,8 @@ body {
         margin-left: 40px;
     }    .logo {
         margin-top: 0;
+        margin-bottom: 27px;
+        margin-left: 30px;
         font-size: 35px;
     }   .navbar-toggle {
        display: none;
