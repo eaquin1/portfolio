@@ -163,7 +163,7 @@ body {
         border-color: #337ab7;
           }
 
-    p {
+    .about_p {
         margin: 20px 100px 20px 100px;
       }
   }
@@ -295,6 +295,6 @@ h1 {
 }
 
 
-  p {
+.about_p {
     margin: 10px 40px 20px 40px;
   }
