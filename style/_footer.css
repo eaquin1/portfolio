@@ -1,0 +1,25 @@
+/*Footer*/
+
+.push {
+  height: 250px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  list-style-type: none;
+  font-size: 25px;
+  background-color: #D3D3D3;
+  height: 90px;
+}
+
+.footer-icon {
+  color: #000000;
+}
+
+.footer-icon:hover,
+.footer-icon:active {
+  color: #709FB0;
+}

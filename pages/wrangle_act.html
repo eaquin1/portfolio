@@ -9129,15 +9129,15 @@ label {
 }
 /* Flexible box model classes */
 /* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
-/* This file is a compatability layer.  It allows the usage of flexible box 
+/* This file is a compatability layer.  It allows the usage of flexible box
 model layouts accross multiple browsers, including older browsers.  The newest,
 universal implementation of the flexible box model is used when available (see
-`Modern browsers` comments below).  Browsers that are known to implement this 
+`Modern browsers` comments below).  Browsers that are known to implement this
 new spec completely include:
 
     Firefox 28.0+
     Chrome 29.0+
-    Internet Explorer 11+ 
+    Internet Explorer 11+
     Opera 17.0+
 
 Browsers not listed, including Safari, are supported via the styling under the
@@ -12519,7 +12519,7 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
-  /* This injects handle bars (a short, wide = symbol) for 
+  /* This injects handle bars (a short, wide = symbol) for
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
@@ -13018,7 +13018,7 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
-    
+
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
 .ansi-black-fg { color: #3E424D; }
 .ansi-black-bg { background-color: #3E424D; }
@@ -13072,43 +13072,19 @@ div#notebook {
   div.cell {
     display: block;
     page-break-inside: avoid;
-  } 
-  div.output_wrapper { 
-    display: block;
-    page-break-inside: avoid; 
   }
-  div.output { 
+  div.output_wrapper {
     display: block;
-    page-break-inside: avoid; 
+    page-break-inside: avoid;
+  }
+  div.output {
+    display: block;
+    page-break-inside: avoid;
   }
 }
 </style>
 
-<!-- Custom stylesheet, it must be in the same directory as the html file -->
-<link rel="stylesheet" href="custom.css">
-
-<!-- Loading mathjax macro -->
-<!-- Load mathjax -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
-    <!-- MathJax configuration -->
-    <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-            processEscapes: true,
-            processEnvironments: true
-        },
-        // Center justify equations in code and markdown cells. Elsewhere
-        // we use CSS to left justify single line equations in code cells.
-        displayAlign: 'center',
-        "HTML-CSS": {
-            styles: {'.MathJax_Display': {"margin": 0}},
-            linebreaks: { automatic: true }
-        }
-    });
-    </script>
-    <!-- End of mathjax configuration --></head>
+</head>
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
@@ -13634,7 +13610,7 @@ div#notebook {
             <span class="nb">print</span><span class="p">(</span><span class="n">tweet_id</span><span class="p">)</span>
         <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
             <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
-            
+
 <span class="n">elapsed_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">process_time</span><span class="p">()</span> <span class="o">-</span> <span class="n">t</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">elapsed_time</span><span class="p">)</span>
 </pre></div>
@@ -13658,7 +13634,7 @@ div#notebook {
                        <span class="s1">&#39;retweets&#39;</span><span class="p">:</span> <span class="n">tweet_line</span><span class="p">[</span><span class="s1">&#39;retweet_count&#39;</span><span class="p">],</span>
                        <span class="s1">&#39;followers_count&#39;</span><span class="p">:</span> <span class="n">tweet_line</span><span class="p">[</span><span class="s1">&#39;user&#39;</span><span class="p">][</span><span class="s1">&#39;followers_count&#39;</span><span class="p">],</span>
                        <span class="s1">&#39;tweet_id&#39;</span><span class="p">:</span> <span class="n">tweet_line</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]})</span>
-        
+
 <span class="n">twitter_api</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df_list</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">twitter_api</span><span class="p">)</span>
 </pre></div>
@@ -17138,66 +17114,66 @@ memory usage: 313.0+ KB
 
 <div class="output_text output_subarea output_execute_result">
 <pre>None           745
-a              55 
-Charlie        12 
-Oliver         11 
-Cooper         11 
-Lucy           11 
-Penny          10 
-Lola           10 
-Tucker         10 
-Winston        9  
-Bo             9  
-the            8  
-Sadie          8  
-Buddy          7  
-Daisy          7  
-an             7  
-Bailey         7  
-Toby           7  
-Milo           6  
-Rusty          6  
-Stanley        6  
-Dave           6  
-Bella          6  
-Jax            6  
-Scout          6  
-Oscar          6  
-Leo            6  
-Koda           6  
-Jack           6  
-Larry          5  
-              ..  
-Winifred       1  
-Pluto          1  
-Stella         1  
-Willem         1  
-Doobert        1  
-Tycho          1  
-Tilly          1  
-Ralphus        1  
-Eriq           1  
-Burt           1  
-Ester          1  
-Miley          1  
-Jomathan       1  
-Ralphy         1  
-Jonah          1  
-Richie         1  
-Mabel          1  
-Eazy           1  
-Holly          1  
-Iroh           1  
-Poppy          1  
-Bloo           1  
-Shakespeare    1  
-Ozzie          1  
-Mitch          1  
-Blanket        1  
-Brandi         1  
-Godi           1  
-Lulu           1  
-Sandra         1  
+a              55
+Charlie        12
+Oliver         11
+Cooper         11
+Lucy           11
+Penny          10
+Lola           10
+Tucker         10
+Winston        9
+Bo             9
+the            8
+Sadie          8
+Buddy          7
+Daisy          7
+an             7
+Bailey         7
+Toby           7
+Milo           6
+Rusty          6
+Stanley        6
+Dave           6
+Bella          6
+Jax            6
+Scout          6
+Oscar          6
+Leo            6
+Koda           6
+Jack           6
+Larry          5
+              ..
+Winifred       1
+Pluto          1
+Stella         1
+Willem         1
+Doobert        1
+Tycho          1
+Tilly          1
+Ralphus        1
+Eriq           1
+Burt           1
+Ester          1
+Miley          1
+Jomathan       1
+Ralphy         1
+Jonah          1
+Richie         1
+Mabel          1
+Eazy           1
+Holly          1
+Iroh           1
+Poppy          1
+Bloo           1
+Shakespeare    1
+Ozzie          1
+Mitch          1
+Blanket        1
+Brandi         1
+Godi           1
+Lulu           1
+Sandra         1
 Name: name, Length: 957, dtype: int64</pre>
 </div>
 
@@ -17232,7 +17208,7 @@ Name: name, Length: 957, dtype: int64</pre>
 
 <div class="output_text output_subarea output_execute_result">
 <pre>False    2297
-True     59  
+True     59
 Name: expanded_urls, dtype: int64</pre>
 </div>
 
@@ -17302,7 +17278,7 @@ Name: expanded_urls, dtype: int64</pre>
 
 <div class="output_text output_subarea output_execute_result">
 <pre>False    2297
-True     59  
+True     59
 Name: expanded_urls, dtype: int64</pre>
 </div>
 
@@ -17534,65 +17510,65 @@ memory usage: 152.1+ KB
 <div class="output_text output_subarea output_execute_result">
 <pre>golden_retriever             150
 Labrador_retriever           100
-Pembroke                     89 
-Chihuahua                    83 
-pug                          57 
-chow                         44 
-Samoyed                      43 
-toy_poodle                   39 
-Pomeranian                   38 
-cocker_spaniel               30 
-malamute                     30 
-French_bulldog               26 
-Chesapeake_Bay_retriever     23 
-miniature_pinscher           23 
-seat_belt                    22 
-Staffordshire_bullterrier    20 
-Siberian_husky               20 
-German_shepherd              20 
-Cardigan                     19 
-web_site                     19 
-Eskimo_dog                   18 
-Maltese_dog                  18 
-teddy                        18 
-beagle                       18 
-Shetland_sheepdog            18 
-Lakeland_terrier             17 
-Shih-Tzu                     17 
-Rottweiler                   17 
-Italian_greyhound            16 
-kuvasz                       16 
-                             .. 
-starfish                     1  
-silky_terrier                1  
-piggy_bank                   1  
-rain_barrel                  1  
-limousine                    1  
-otter                        1  
-hotdog                       1  
-military_uniform             1  
-basketball                   1  
-leaf_beetle                  1  
-teapot                       1  
-electric_fan                 1  
-standard_schnauzer           1  
-coho                         1  
-pencil_box                   1  
-microwave                    1  
-harp                         1  
-bookshop                     1  
-mailbox                      1  
-grey_fox                     1  
-hand_blower                  1  
-bonnet                       1  
-banana                       1  
-bookcase                     1  
-African_hunting_dog          1  
-sliding_door                 1  
-fountain                     1  
-jersey                       1  
-groenendael                  1  
-zebra                        1  
+Pembroke                     89
+Chihuahua                    83
+pug                          57
+chow                         44
+Samoyed                      43
+toy_poodle                   39
+Pomeranian                   38
+cocker_spaniel               30
+malamute                     30
+French_bulldog               26
+Chesapeake_Bay_retriever     23
+miniature_pinscher           23
+seat_belt                    22
+Staffordshire_bullterrier    20
+Siberian_husky               20
+German_shepherd              20
+Cardigan                     19
+web_site                     19
+Eskimo_dog                   18
+Maltese_dog                  18
+teddy                        18
+beagle                       18
+Shetland_sheepdog            18
+Lakeland_terrier             17
+Shih-Tzu                     17
+Rottweiler                   17
+Italian_greyhound            16
+kuvasz                       16
+                             ..
+starfish                     1
+silky_terrier                1
+piggy_bank                   1
+rain_barrel                  1
+limousine                    1
+otter                        1
+hotdog                       1
+military_uniform             1
+basketball                   1
+leaf_beetle                  1
+teapot                       1
+electric_fan                 1
+standard_schnauzer           1
+coho                         1
+pencil_box                   1
+microwave                    1
+harp                         1
+bookshop                     1
+mailbox                      1
+grey_fox                     1
+hand_blower                  1
+bonnet                       1
+banana                       1
+bookcase                     1
+African_hunting_dog          1
+sliding_door                 1
+fountain                     1
+jersey                       1
+groenendael                  1
+zebra                        1
 Name: p1, Length: 378, dtype: int64</pre>
 </div>
 
@@ -18495,13 +18471,13 @@ memory usage: 473.4+ KB
 
 <div class="output_text output_subarea output_execute_result">
 <pre>                 1744
-pupper           211 
-doggo            65  
-puppo            23  
-doggo,pupper     11  
-floofer          7   
-doggo,puppo      1   
-doggo,floofer    1   
+pupper           211
+doggo            65
+puppo            23
+doggo,pupper     11
+floofer          7
+doggo,puppo      1
+doggo,floofer    1
 Name: dog_stages, dtype: int64</pre>
 </div>
 
@@ -19320,66 +19296,66 @@ memory usage: 264.5+ KB
 
 <div class="output_text output_subarea output_execute_result">
 <pre>None           575
-a              55 
-Oliver         10 
-Cooper         10 
-Penny          10 
-Lucy           10 
-Tucker         10 
-Charlie        10 
-Winston        8  
-Sadie          8  
-Bo             8  
-Lola           8  
-Toby           7  
-the            7  
-an             7  
-Daisy          7  
-Rusty          6  
-Jax            6  
-Koda           6  
-Scout          6  
-Bella          6  
-Dave           6  
-Milo           6  
-Stanley        6  
-Bailey         6  
-Louis          5  
-Oscar          5  
-Chester        5  
-Leo            5  
-Alfie          5  
-              ..  
-Sparky         1  
-Apollo         1  
-Mingus         1  
-Arlo           1  
-Blakely        1  
-Brandi         1  
-Mitch          1  
-Claude         1  
-Jomathan       1  
-Tebow          1  
-Longfellow     1  
-Jimbo          1  
-Lassie         1  
-Jameson        1  
-Grady          1  
-Tyrone         1  
-Burt           1  
-Miley          1  
-Mattie         1  
-Ozzie          1  
-Mabel          1  
-Eazy           1  
-Sierra         1  
-Eriq           1  
-Holly          1  
-Poppy          1  
-Aiden          1  
-Bloo           1  
-Shakespeare    1  
-Sandra         1  
+a              55
+Oliver         10
+Cooper         10
+Penny          10
+Lucy           10
+Tucker         10
+Charlie        10
+Winston        8
+Sadie          8
+Bo             8
+Lola           8
+Toby           7
+the            7
+an             7
+Daisy          7
+Rusty          6
+Jax            6
+Koda           6
+Scout          6
+Bella          6
+Dave           6
+Milo           6
+Stanley        6
+Bailey         6
+Louis          5
+Oscar          5
+Chester        5
+Leo            5
+Alfie          5
+              ..
+Sparky         1
+Apollo         1
+Mingus         1
+Arlo           1
+Blakely        1
+Brandi         1
+Mitch          1
+Claude         1
+Jomathan       1
+Tebow          1
+Longfellow     1
+Jimbo          1
+Lassie         1
+Jameson        1
+Grady          1
+Tyrone         1
+Burt           1
+Miley          1
+Mattie         1
+Ozzie          1
+Mabel          1
+Eazy           1
+Sierra         1
+Eriq           1
+Holly          1
+Poppy          1
+Aiden          1
+Bloo           1
+Shakespeare    1
+Sandra         1
 Name: name, Length: 934, dtype: int64</pre>
 </div>
 
@@ -19495,61 +19471,61 @@ Oliver        10
 Penny         10
 Lucy          10
 Charlie       10
-Winston       8 
-Bo            8 
-Lola          8 
-Sadie         8 
-Toby          7 
-Daisy         7 
-Jax           6 
-Dave          6 
-Bella         6 
-Bailey        6 
-Koda          6 
-Stanley       6 
-Milo          6 
-Scout         6 
-Rusty         6 
-Alfie         5 
-Louis         5 
-Chester       5 
-Larry         5 
-Leo           5 
-Buddy         5 
-Oscar         5 
-Chip          4 
-Bentley       4 
-             .. 
-Jim           1 
-Genevieve     1 
-Georgie       1 
-Arya          1 
-Lacy          1 
-Joey          1 
-Bloo          1 
-Aiden         1 
-Poppy         1 
-Holly         1 
-Tayzie        1 
-Stormy        1 
-Meyer         1 
-Claude        1 
-Tebow         1 
-Longfellow    1 
-Jimbo         1 
-Lassie        1 
-Jameson       1 
-Grady         1 
-Tyrone        1 
-Burt          1 
-Miley         1 
-Jomathan      1 
-Richie        1 
-Mabel         1 
-Eazy          1 
-Sierra        1 
-Eriq          1 
-Sandra        1 
+Winston       8
+Bo            8
+Lola          8
+Sadie         8
+Toby          7
+Daisy         7
+Jax           6
+Dave          6
+Bella         6
+Bailey        6
+Koda          6
+Stanley       6
+Milo          6
+Scout         6
+Rusty         6
+Alfie         5
+Louis         5
+Chester       5
+Larry         5
+Leo           5
+Buddy         5
+Oscar         5
+Chip          4
+Bentley       4
+             ..
+Jim           1
+Genevieve     1
+Georgie       1
+Arya          1
+Lacy          1
+Joey          1
+Bloo          1
+Aiden         1
+Poppy         1
+Holly         1
+Tayzie        1
+Stormy        1
+Meyer         1
+Claude        1
+Tebow         1
+Longfellow    1
+Jimbo         1
+Lassie        1
+Jameson       1
+Grady         1
+Tyrone        1
+Burt          1
+Miley         1
+Jomathan      1
+Richie        1
+Mabel         1
+Eazy          1
+Sierra        1
+Eriq          1
+Sandra        1
 Name: name, Length: 912, dtype: int64</pre>
 </div>
 
@@ -21526,24 +21502,24 @@ Name: expanded_urls, dtype: int64</pre>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>tweet_id              786709082849828864                                                                                                              
-timestamp             2016-10-13 23:23:56                                                                                                             
+<pre>tweet_id              786709082849828864
+timestamp             2016-10-13 23:23:56
 text                  This is Logan, the Chow who lived. He solemnly swears he&#39;s up to lots of good. H*ckin magical af 9.75/10 https://t.co/yBO5wuqaPS
-expanded_urls         https://twitter.com/dog_rates/status/786709082849828864/photo/1                                                                 
-rating_numerator      9.75                                                                                                                            
-rating_denominator    10                                                                                                                              
-name                  Logan                                                                                                                           
-favorites             19182                                                                                                                           
-followers_count       8130307                                                                                                                         
-retweets              6556                                                                                                                            
-jpg_url               https://pbs.twimg.com/media/CurzvFTXgAA2_AP.jpg                                                                                 
-img_num               1                                                                                                                               
-p1                    Pomeranian                                                                                                                      
-p1_conf               0.467321                                                                                                                        
-p1_dog                True                                                                                                                            
-p2                    Persian_cat                                                                                                                     
-p3                    chow                                                                                                                            
-dog_stages                                                                                                                                            
+expanded_urls         https://twitter.com/dog_rates/status/786709082849828864/photo/1
+rating_numerator      9.75
+rating_denominator    10
+name                  Logan
+favorites             19182
+followers_count       8130307
+retweets              6556
+jpg_url               https://pbs.twimg.com/media/CurzvFTXgAA2_AP.jpg
+img_num               1
+p1                    Pomeranian
+p1_conf               0.467321
+p1_dog                True
+p2                    Persian_cat
+p3                    chow
+dog_stages
 Name: 549, dtype: object</pre>
 </div>
 
@@ -21669,17 +21645,17 @@ memory usage: 334.9+ KB
 Cooper     10
 Oliver     10
 Charlie    10
-Tucker     9 
-Penny      9 
-Winston    8 
-Sadie      8 
-Toby       7 
-Lola       7 
-Daisy      7 
-Jax        6 
-Bella      6 
-Bo         6 
-Koda       6 
+Tucker     9
+Penny      9
+Winston    8
+Sadie      8
+Toby       7
+Lola       7
+Daisy      7
+Jax        6
+Bella      6
+Bo         6
+Koda       6
 Name: name, dtype: int64</pre>
 </div>
 
@@ -21978,7 +21954,7 @@ Name: name, dtype: int64</pre>
   </div>
 </body>
 
- 
+
 
 
 </html>
