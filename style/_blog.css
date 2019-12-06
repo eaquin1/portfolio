@@ -1,0 +1,93 @@
+/*blog*/
+
+.bloggroup {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 5vw 0 5vw;
+}
+
+.individual-post {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  height: 25vh;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #dedede;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin: 0 auto 1.5rem;
+  max-width: 1024px;
+  overflow: hidden;
+  padding: 50px;
+}
+
+.blog-text {
+  padding: 3%;
+}
+
+.blog-image {
+  background-size: contain;
+  width: 30vw;
+}
+
+.blog-title {
+  padding: 30px;
+  text-align: center;
+}
+
+button {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+button:hover,
+button:focus,
+button:active {
+    border-color: #337ab7;
+      }
+
+.blog-post {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.blogbody {
+  padding: 50px;
+}
+
+.blogbody > p {
+  padding: 10px;
+}
+
+.blog-image-post {
+  text-align: center;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .individual-post {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+    padding: 20px;
+  }
+  .blog-title {
+    padding: 5px;
+  }
+  .blog-image {
+    height: 20vh;
+  }
+  button {
+    margin: 5px;
+    padding: 5px;
+  }
+  .blogbody{
+    padding: 2px;
+  }
+}
