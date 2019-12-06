@@ -13,7 +13,6 @@
   display: flex;
   flex-direction: row;
   flex-grow: 1;
-  height: 25vh;
   background: rgba(255, 255, 255, 0.2);
   border: 1px solid #dedede;
   border-radius: 0.5rem;
