@@ -147,10 +147,6 @@ function removeStars() {
   star.removeChild(star.firstElementChild);
 }
 
-function allMatched() {
-
-}
-
 
 const restart = document.querySelector('.restart');
 
