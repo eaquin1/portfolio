@@ -3,7 +3,7 @@
  */
 const listOfCards = document.querySelectorAll('.card');
 
-//let listOfCards = Array.from(nodeListOfCards)
+
 console.log(listOfCards);
 
 /*
