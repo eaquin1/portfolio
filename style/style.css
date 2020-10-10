@@ -67,6 +67,23 @@ body {
 .active {
     display: block;
 }
+#home .content {
+    text-align: center;
+    margin: auto 0;
+}
+
+#home .content h1 {
+    font-size: 12.5vw;
+    font-weight: 900;
+    font-family: "Overpass", sans-serif;
+    line-height: 1em;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-attachment: fixed;
+    padding: 0 0 10px 0;
+    background-image: url("https://images.unsplash.com/photo-1600915034528-5006d4ad8b78");
+}
 
 @media screen and (min-width: 768px) {
     .navbar {
