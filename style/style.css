@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: "Josefin Sans", sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 #page-container {
@@ -20,12 +20,19 @@ body {
     list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+}
 .navbar {
     font-size: 25px;
-    /* background-image: linear-gradient(260deg, #a0c1b8 0%, #709fb0 100%); */
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: 0px 0.5px 9px 0px rgb(214, 212, 214);
     padding-bottom: 10px;
+    background: white;
+    z-index: 99;
 }
 
 .nav-links,
@@ -36,12 +43,12 @@ body {
 }
 
 .logo {
-    font-family: "Pacifico", cursive;
+    font-family: "Raleway";
     margin-top: 0;
     margin-left: 100px;
     color: black;
     /* color: rgba(255, 255, 255, 0.7); */
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .hashtag {
@@ -76,7 +83,7 @@ body {
 }
 
 #home .content h1 {
-    font-size: 12.5vw;
+    font-size: 14vw;
     font-weight: 900;
     font-family: "Overpass", sans-serif;
     line-height: 1em;
@@ -86,6 +93,55 @@ body {
     background-attachment: fixed;
     padding: 100px 100px 100px 100px;
     background-image: url("https://images.unsplash.com/photo-1600915034528-5006d4ad8b78");
+}
+
+/* Skills */
+
+#skills {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100%;
+    grid-gap: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#work {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100%;
+    grid-gap: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+#work div {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 14%;
+}
+.come-in {
+    transform: translateY(150px);
+    animation: come-in 1s ease forwards;
+}
+@keyframes come-in {
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* #box {
+    border: solid;
+    height: 100vh;
+} */
+#skills div {
+    border: solid;
+    border-radius: 20px;
+    background-color: rgb(234, 208, 69);
+    padding: 1rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -201,12 +257,8 @@ body {
 .headlines {
     display: grid;
     text-align: center;
-    margin: 40px;
-}
-
-h1 {
-    font-family: "Pacifico", cursive;
-    font-size: 50px;
+    margin: 40px 40px 80px 40px;
+    font-size: 2em;
 }
 
 /*Intro*/
