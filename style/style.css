@@ -31,14 +31,16 @@ a {
     font-size: 25px;
     position: fixed;
     width: 100%;
-    overflow: hidden;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: 0px 0.5px 9px 0px rgb(214, 212, 214);
     padding-bottom: 10px;
     background: white;
     z-index: 99;
 }
-
+.active {
+    z-index: 99;
+    background: white;
+}
 .nav-links,
 .logo {
     text-decoration: none;
