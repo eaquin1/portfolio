@@ -13,7 +13,7 @@
         />
 
         <link
-            href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Monoton&family=Raleway&display=swap"
             rel="stylesheet"
         />
         <script src="https://kit.fontawesome.com/728650e4d6.js"></script>
@@ -63,265 +63,175 @@
                 </div>
             </div>
 
-            <!-- <div class="split-screen">
-                <div class="intro">
-                    <ul class="intro-list fa-ul">
-                        <li class="intro-li">
-                            <span class="fa-li"
-                                ><i class="fas fa-laptop icon"></i
-                            ></span>
-                            I'm a front end developer, with a bit of data
-                            analysis on the side
-                        </li>
-                        <li class="intro-li">
-                            <span class="fa-li"
-                                ><i class="fas fa-database icon"></i
-                            ></span>
-                            My languages include JavaScript, HTML/CSS, and data
-                            analysis with Python, Pandas and a touch of mySQL
-                        </li>
-                        <li class="intro-li">
-                            <span class="fa-li"
-                                ><i class="fas fa-music icon"></i
-                            ></span>
-                            I'm also a violinist!
-                        </li>
-                        <li class="intro-li">
-                            
-                            web app for learning more about your electricity
-                            usage
-                        </li>
-                        <li class="intro-li">
-                            <span class="fa-li"
-                                ><i class="fas fa-keyboard icon"></i
-                            ></span>
-                            I'm looking to combine my unconventional background
-                            with unique technical solutions
-                        </li>
-                        <li class="intro-li">
-                            <span class="fa-li"
-                                ><i class="fas fa-coffee icon"></i
-                            ></span>
-                            Send me an
-                            <a
-                                class="email"
-                                href="mailto:sharpdesignsdeveloper@gmail.com"
-                                >email</a
-                            >
-                            with any questions!
-                        </li>
-                    </ul>
-                </div>
-                <div class="works-container">
-                    <div class="work work1">
-                        <a href="pages/memory-game/index.html">
-                            <img
-                                class="work-image"
-                                src="images/memory2.png"
-                                alt="memory game"
-                            />
-                        </a>
-                    </div>
-                    <div class="work work2">
-                        <a href="pages/WhackAMole/index.html">
-                            <img
-                                class="work-image"
-                                src="images/mole.png"
-                                alt="mole"
-                            />
-                        </a>
-                    </div>
-                    <div class="work work3">
-                        <a href="pages/clock/index.html">
-                            <img
-                                class="work-image"
-                                src="images/clock3.png"
-                                alt="clock"
-                            />
-                        </a>
-                    </div>
-                    <div class="work work4">
-                        <a href="pages/wrangle_act.html">
-                            <img
-                                class="work-image"
-                                src="images/weRateDogs.png"
-                                alt="dog"
-                            />
-                        </a>
-                    </div>
-                    <div class="work work5">
-                        <a href="pages/exploration_template.html">
-                            <img
-                                class="work-image"
-                                src="images/analysis2.png"
-                                alt="analysis"
-                            />
-                        </a>
-                    </div>
-                    <div class="work work6">
-                        <a
-                            href="pages/Trends in Income, Body Mass and Calorie Consumption.html"
-                        >
-                            <img
-                                class="work-image"
-                                src="images/trends.png"
-                                alt="trends"
-                            />
-                        </a>
-                    </div>
-                </div>
-            </div> -->
-            <!-- <div id="box"></div> -->
-            <!-- <h2>Projects</h2> -->
             <section id="work">
-                <div class="card">
-                    <h2 class="work-title">Energy Guide</h2>
-                    <p>
-                        An interactive calculator for a user to make informed
-                        decisions on their electricity usage, built with
-                        Python/Flask, and JavaScript. It shows the user how
-                        clean their electricity grid is at the current time,
-                        using the Watt Time API, and how much it costs to use
-                        various home appliances.
-                    </p>
-                    <img src="images/energy-guide.png" class="work-image" />
-                    <button>
-                        <a href="https://energy-guide.herokuapp.com">TRY IT</a>
-                    </button>
-                    <button>
-                        <a
-                            href="https://github.com/eaquin1/EnergyGuideCalculator"
-                            >GITHUB</a
-                        >
-                    </button>
-                </div>
+                <h2 class="title">Creations</h2>
+                <div id="work-container">
+                    <div class="card">
+                        <h2 class="work-title">Energy Guide</h2>
+                        <p>
+                            An interactive calculator for a user to make
+                            informed decisions on their electricity usage, built
+                            with Python/Flask, and JavaScript. It shows the user
+                            how clean their electricity grid is at the current
+                            time, using the Watt Time API, and how much it costs
+                            to use various home appliances.
+                        </p>
+                        <img src="images/energy-guide.png" class="work-image" />
+                        <button>
+                            <a href="https://energy-guide.herokuapp.com"
+                                >DEMO</a
+                            >
+                        </button>
+                        <button>
+                            <a
+                                href="https://github.com/eaquin1/EnergyGuideCalculator"
+                                >CODE</a
+                            >
+                        </button>
+                    </div>
 
-                <div class="card">
-                    <h2 class="work-title">Dexcom Tracker</h2>
+                    <div class="card">
+                        <h2 class="work-title">Dexcom Tracker</h2>
 
-                    <p>
-                        A web app using the Dexcom API and the Edamam API to
-                        visualize changes in glucose levels. The Dexcom API has
-                        blood glucose levels that are measured every five
-                        minutes, and the Edamam API has carbohydrate information
-                        for meals. The web app combines a user's meal
-                        information with their blood sugars over a range of
-                        dates, to allow for a better understanding of the user's
-                        blood sugar fluctuations. The app uses React,
-                        Express.js, PostgreSQL, Redis and Passport.js.
-                    </p>
-                    <img src="images/dexcom-tracker.png" class="work-image" />
-                    <button>
-                        <a href="https://dexcom-tracker.herokuapp.com"></a>TRY
-                        IT
-                    </button>
-                    <button>
-                        <a href="https://github.com/eaquin1/capstone-backend"
-                            >GITHUB</a
-                        >
-                    </button>
-                </div>
+                        <p>
+                            A web app using the Dexcom API and the Edamam API to
+                            visualize changes in glucose levels. The Dexcom API
+                            has blood glucose levels that are measured every
+                            five minutes, and the Edamam API has carbohydrate
+                            information for meals. The web app combines a user's
+                            meal information with their blood sugars over a
+                            range of dates, to allow for a better understanding
+                            of the user's blood sugar fluctuations. The app uses
+                            React, Express.js, PostgreSQL, Redis and
+                            Passport.js.
+                        </p>
+                        <img
+                            src="images/dexcom-tracker.png"
+                            class="work-image"
+                        />
+                        <button>
+                            <a href="https://dexcom-tracker.herokuapp.com"></a
+                            >DEMO
+                        </button>
+                        <button>
+                            <a
+                                href="https://github.com/eaquin1/capstone-backend"
+                                >CODE</a
+                            >
+                        </button>
+                    </div>
 
-                <div class="card">
-                    <h2 class="work-title">Jobly</h2>
+                    <div class="card">
+                        <h2 class="work-title">Jobly</h2>
 
-                    <p>
-                        A dynamic front-end React app, which uses Express for
-                        the backend. This application has a well designed
-                        component hierarchy, a functional database, an API
-                        helper, routing, a jobs page, authentication, and a user
-                        profile.
-                    </p>
-                    <img src="images/jobly.png" class="work-image" />
-                    <button>
-                        <a href="https://sunny-jobs.herokuapp.com">TRY IT</a>
-                    </button>
-                    <button>
-                        <a href="https://github.com/eaquin1/react-jobly"
-                            >GITHUB</a
-                        >
-                    </button>
-                </div>
+                        <p>
+                            A dynamic front-end React app, which uses Express
+                            for the backend. This application has a well
+                            designed component hierarchy, a functional database,
+                            an API helper, routing, a jobs page, authentication,
+                            and a user profile.
+                        </p>
+                        <img src="images/jobly.png" class="work-image" />
+                        <button>
+                            <a href="https://sunny-jobs.herokuapp.com">DEMO</a>
+                        </button>
+                        <button>
+                            <a href="https://github.com/eaquin1/react-jobly"
+                                >CODE</a
+                            >
+                        </button>
+                    </div>
 
-                <div class="card">
-                    <h2 class="work-title">We Rate Dogs Twitter Analysis</h2>
+                    <div class="card">
+                        <h2 class="work-title">
+                            We Rate Dogs Twitter Analysis
+                        </h2>
 
-                    <p>
-                        The tweets from the "We Rate Dogs" Twitter account are
-                        analyzed using Python, NumPy, Seaborn and MatPlotLib.
-                    </p>
-                    <img src="images/weRateDogs.png" class="work-image" />
-                    <button>
-                        <a href="pages/exploration_template.html"
-                            >Jupyter Notebook</a
-                        >
-                    </button>
-                </div>
+                        <p>
+                            The tweets from the "We Rate Dogs" Twitter account
+                            are analyzed using Python, NumPy, Seaborn and
+                            MatPlotLib.
+                        </p>
+                        <img src="images/weRateDogs.png" class="work-image" />
+                        <button>
+                            <a href="pages/exploration_template.html"
+                                >Jupyter Notebook</a
+                            >
+                        </button>
+                    </div>
 
-                <div class="card">
-                    <h2 class="work-title">Memory Game</h2>
+                    <div class="card">
+                        <h2 class="work-title">Memory Game</h2>
 
-                    <p>
-                        Recreating the classic game of Memory (also known as
-                        Concentration), with cats galore. Built with JavaScript.
-                    </p>
-                    <img src="images/memory2.png" class="work-image" />
-                    <button>
-                        <a href="pages/memory-game/index.html">TRY IT</a>
-                    </button>
-                    <button>
-                        <a href="https://github.com/eaquin1/cat-memory-game">
-                            GITHUB</a
-                        >
-                    </button>
-                </div>
+                        <p>
+                            Recreating the classic game of Memory (also known as
+                            Concentration), with cats galore. Built with
+                            JavaScript.
+                        </p>
+                        <img src="images/memory2.png" class="work-image" />
+                        <button>
+                            <a href="pages/memory-game/index.html">DEMO</a>
+                        </button>
+                        <button>
+                            <a
+                                href="https://github.com/eaquin1/cat-memory-game"
+                            >
+                                CODE</a
+                            >
+                        </button>
+                    </div>
 
-                <div class="card">
-                    <h2 class="work-title">Typing Component</h2>
+                    <div class="card">
+                        <h2 class="work-title">Typing Component</h2>
 
-                    <p>A React component to create a typing effect</p>
-                    <video
-                        controls="controls"
-                        width="300"
-                        name="Video Name"
-                        src="images/demo.mov"
-                        class="work-image"
-                    ></video>
+                        <p>A React component to create a typing effect</p>
+                        <video
+                            controls="controls"
+                            width="300"
+                            name="Video Name"
+                            src="images/demo.mov"
+                            class="work-image"
+                        ></video>
 
-                    <button>
-                        <a href="https://github.com/eaquin1/writing"> GITHUB</a>
-                    </button>
+                        <button>
+                            <a href="https://github.com/eaquin1/writing">
+                                CODE</a
+                            >
+                        </button>
+                    </div>
                 </div>
             </section>
             <section id="skills">
-                <!-- <h2>Skills</h2> -->
-                <div>
-                    <i class="fab fa-react"></i>
-                    <h6>React</h6>
-                </div>
-                <div>
-                    <i class="fab fa-python"></i>
-                    <h6>Python</h6>
-                </div>
-                <div>
-                    <i class="fab fa-js-square"></i>
-                    <h6>JavaScript</h6>
-                </div>
-                <div>
-                    <i class="fab fa-git"></i>
-                    <h6>Git</h6>
-                </div>
-                <div>
-                    <i class="fab fa-node-js"></i>
-                    <h6>Node.js</h6>
-                </div>
-                <div>
-                    <i class="fas fa-database"></i>
-                    <h6>Postgresql</h6>
+                <h2 class="title">Skills</h2>
+                <div id="skills-container">
+                    <div>
+                        <i class="fab fa-react"></i>
+                        <h6>React</h6>
+                    </div>
+                    <div>
+                        <i class="fab fa-python"></i>
+                        <h6>Python</h6>
+                    </div>
+                    <div>
+                        <i class="fab fa-js-square"></i>
+                        <h6>JavaScript</h6>
+                    </div>
+                    <div>
+                        <i class="fab fa-git"></i>
+                        <h6>Git</h6>
+                    </div>
+                    <div>
+                        <i class="fab fa-node-js"></i>
+                        <h6>Node.js</h6>
+                    </div>
+                    <div>
+                        <i class="fas fa-database"></i>
+                        <h6>Postgresql</h6>
+                    </div>
                 </div>
             </section>
             <section id="about">
-                <h2>About</h2>
+                <h2 class="title">About</h2>
                 <p id="blurb">
                     Hi, my name is Emily. My two passions in life, music and
                     technology, do not seem to have many similarities on the
